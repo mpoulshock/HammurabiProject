@@ -10,17 +10,112 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[       779,         34]
-NotebookOptionsPosition[       561,         21]
-NotebookOutlinePosition[       919,         37]
-CellTagsIndexPosition[       876,         34]
+NotebookDataLength[      4969,        167]
+NotebookOptionsPosition[      3538,        116]
+NotebookOutlinePosition[      3898,        132]
+CellTagsIndexPosition[      3855,        129]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
 Notebook[{
+
+Cell[CellGroupData[{
+Cell["Tutorial on the DSL for Legal Rules", "Chapter",
+ CellChangeTimes->{{3.684851078259878*^9, 3.684851101494008*^9}}],
+
+Cell[CellGroupData[{
+
+Cell["Introduction", "Section",
+ CellChangeTimes->{{3.684851064749486*^9, 3.684851068205798*^9}}],
+
+Cell["Background and Context", "Subsection",
+ CellChangeTimes->{{3.6848513745240498`*^9, 3.684851377814486*^9}}],
+
+Cell["About the DSL", "Subsection",
+ CellChangeTimes->{{3.684851388367105*^9, 3.684851392983281*^9}}],
+
+Cell["Using the DSL", "Subsection",
+ CellChangeTimes->{{3.684851397055277*^9, 3.684851398512398*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Rules", "Section",
+ CellChangeTimes->{{3.684851131808951*^9, 3.684851132625929*^9}}],
+
+Cell["What is a Rule?", "Subsection",
+ CellChangeTimes->{{3.684851404393445*^9, 3.684851408141861*^9}}],
+
+Cell["Defining a Rulebase", "Subsection",
+ CellChangeTimes->{{3.6848514649508142`*^9, 3.6848514721707077`*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Interacting with a Rulebase", "Section",
+ CellChangeTimes->{{3.684851140763155*^9, 3.6848511552762337`*^9}}],
+
+Cell["Applying Rules to a Fact Pattern", "Subsection",
+ CellChangeTimes->{{3.6848512397355013`*^9, 3.684851252928381*^9}, {
+  3.6848514768767567`*^9, 3.684851478461731*^9}}],
+
+Cell["Seeing the Reasons for a Decision", "Subsection",
+ CellChangeTimes->{{3.684851259433823*^9, 3.684851268222818*^9}, {
+  3.684851480709536*^9, 3.684851480932919*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Time", "Section",
+ CellChangeTimes->{{3.6848512049659567`*^9, 3.6848512055168133`*^9}}],
+
+Cell["The Challenge of Time", "Subsection",
+ CellChangeTimes->{{3.684851529101399*^9, 3.6848515452562513`*^9}}],
+
+Cell["TimeLine Objects and Operators", "Subsection",
+ CellChangeTimes->{{3.684851549236135*^9, 3.684851555113223*^9}}],
+
+Cell["Absolute Time", "Subsection",
+ CellChangeTimes->{{3.684851568296748*^9, 3.68485157004985*^9}}],
+
+Cell["Relationships among Dates", "Subsection",
+ CellChangeTimes->{{3.684851726132756*^9, 3.68485173642409*^9}}],
+
+Cell["Per Interval", "Subsection",
+ CellChangeTimes->{{3.6848515964129047`*^9, 3.6848516029650173`*^9}}],
+
+Cell["Elapsed Time", "Subsection",
+ CellChangeTimes->{{3.6848516053744783`*^9, 3.684851606999566*^9}}],
+
+Cell["Other Temporal Functions", "Subsection",
+ CellChangeTimes->{{3.684851609040551*^9, 3.684851612843144*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["Extended Examples", "Section",
+ CellChangeTimes->{{3.6848512914518833`*^9, 3.684851295420968*^9}, 
+   3.684851510517004*^9}],
+
+Cell["Tax", "Subsection",
+ CellChangeTimes->{{3.684851623607542*^9, 3.684851627325691*^9}}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell["The Hammurabi Project", "Section",
+ CellChangeTimes->{{3.684851303126894*^9, 3.684851306770071*^9}}],
+
+Cell["About", "Subsection",
+ CellChangeTimes->{{3.684851494244142*^9, 3.684851495001048*^9}}],
+
+Cell["How to Contribute", "Subsection",
+ CellChangeTimes->{{3.684851499897313*^9, 3.684851502563233*^9}}]
+}, Open  ]]
+}, Open  ]]
 },
 WindowSize->{808, 700},
-WindowMargins->{{52, Automatic}, {Automatic, 4}},
+WindowMargins->{{245, Automatic}, {30, Automatic}},
 FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
 21, 2016)",
 StyleDefinitions->"Default.nb"
@@ -36,9 +131,45 @@ CellTagsIndex->{}
 *)
 (*NotebookFileOutline
 Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 120, 1, 65, "Chapter"],
+Cell[CellGroupData[{
+Cell[725, 27, 97, 1, 64, "Section"],
+Cell[825, 30, 112, 1, 44, "Subsection"],
+Cell[940, 33, 101, 1, 36, "Subsection"],
+Cell[1044, 36, 101, 1, 36, "Subsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1182, 42, 90, 1, 64, "Section"],
+Cell[1275, 45, 103, 1, 44, "Subsection"],
+Cell[1381, 48, 111, 1, 36, "Subsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[1529, 54, 114, 1, 64, "Section"],
+Cell[1646, 57, 173, 2, 44, "Subsection"],
+Cell[1822, 61, 170, 2, 36, "Subsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2029, 68, 93, 1, 64, "Section"],
+Cell[2125, 71, 111, 1, 44, "Subsection"],
+Cell[2239, 74, 118, 1, 36, "Subsection"],
+Cell[2360, 77, 100, 1, 36, "Subsection"],
+Cell[2463, 80, 112, 1, 36, "Subsection"],
+Cell[2578, 83, 104, 1, 36, "Subsection"],
+Cell[2685, 86, 102, 1, 36, "Subsection"],
+Cell[2790, 89, 112, 1, 36, "Subsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[2939, 95, 130, 2, 64, "Section"],
+Cell[3072, 99, 91, 1, 44, "Subsection"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[3200, 105, 106, 1, 64, "Section"],
+Cell[3309, 108, 93, 1, 44, "Subsection"],
+Cell[3405, 111, 105, 1, 36, "Subsection"]
+}, Open  ]]
+}, Open  ]]
 }
 ]
 *)
-
-(* End of internal cache information *)
 
