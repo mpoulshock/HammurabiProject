@@ -4,6 +4,7 @@
 
 The Hammurabi Project is an experiment in representing legal rules as executable computer code. The project consists of a domain specific language that facilitates the modeling of legal rules, as well as a large-scale knowledgebase of rules from a variety of jurisdictions.
 
+For more information, see the [[project wiki|https://github.com/mpoulshock/HammurabiProject/wiki]].
 
 ## Disclaimer
 
@@ -11,9 +12,7 @@ The use of this code is subject to a [modified MIT license](https://github.com/m
 
 ## Contributing
 
-Contributions of any kind are welcome.
-
-The project is written in the [Wolfram Language](https://www.wolfram.com/language/) (formerly called Mathematica).  You can use the Wolfram Language for free by [registering with Wolfram Research](https://user.wolfram.com/wolframid/registration/cloud).  Then go to the [Wolfram Programming Cloud](http://www.wolframcloud.com/) and upload a notebook (.nb) file from this project, using the upload icon in the upper right hand corner of your Programming Cloud home screen.  Then you can tinker with the .nb file there.
+The project is written in the [Wolfram Language](https://www.wolfram.com/language/) (formerly Mathematica).  You can use the Wolfram Language for free by [registering with Wolfram Research](https://user.wolfram.com/wolframid/registration/cloud).  Then go to the [Wolfram Programming Cloud](http://www.wolframcloud.com/) and upload a notebook (.nb) file from this project, using the upload icon in the upper right hand corner of your Programming Cloud home screen.  Then you can tinker with the .nb file there.
 
 Each .nb file in this repository is accompanied by a PDF version of itself, since the .nb files do not render well in Github.
 
