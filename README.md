@@ -4,7 +4,7 @@
 
 The Hammurabi Project is an experiment in representing legal rules as executable computer code. The project consists of a domain specific language that facilitates the modeling of legal rules, as well as a large-scale knowledgebase of rules from a variety of jurisdictions.
 
-For more information, see the [project wiki(https://github.com/mpoulshock/HammurabiProject/wiki)].
+For more information, see the [project wiki](https://github.com/mpoulshock/HammurabiProject/wiki).
 
 ## Disclaimer
 
