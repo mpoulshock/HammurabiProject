@@ -10,10 +10,10 @@
 NotebookFileLineBreakTest
 NotebookFileLineBreakTest
 NotebookDataPosition[       158,          7]
-NotebookDataLength[    782655,      19608]
-NotebookOptionsPosition[    751984,      18568]
-NotebookOutlinePosition[    752397,      18586]
-CellTagsIndexPosition[    752354,      18583]
+NotebookDataLength[    783821,      19635]
+NotebookOptionsPosition[    753146,      18595]
+NotebookOutlinePosition[    753562,      18613]
+CellTagsIndexPosition[    753519,      18610]
 WindowFrame->Normal*)
 
 (* Beginning of Notebook Content *)
@@ -18515,25 +18515,52 @@ Cell[BoxData[
      RowBox[{"str", "=", 
       RowBox[{"ToString", "[", "expr", "]"}]}], "}"}], ",", 
     "\[IndentingNewLine]", 
-    RowBox[{"ToString", "[", 
-     RowBox[{"Definition", "[", 
-      RowBox[{"Evaluate", "[", 
-       RowBox[{"StringTake", "[", 
-        RowBox[{"str", ",", 
-         RowBox[{"{", 
-          RowBox[{"1", ",", 
-           RowBox[{
+    RowBox[{"(*", " ", 
+     RowBox[{
+      RowBox[{
+      "Handle", " ", "expressions", " ", "without", " ", "parameters"}], ",", 
+      " ", 
+      RowBox[{"e", ".", "g", ".", " ", "compliesWithLaw"}]}], " ", "*)"}], 
+    "\[IndentingNewLine]", 
+    RowBox[{
+     RowBox[{"If", "[", 
+      RowBox[{
+       RowBox[{"!", 
+        RowBox[{"StringContainsQ", "[", 
+         RowBox[{"str", ",", "\"\<[\>\""}], "]"}]}], ",", 
+       RowBox[{"Return", "[", 
+        RowBox[{"ToString", "[", 
+         RowBox[{"Definition", "[", 
+          RowBox[{"Evaluate", "[", "str", "]"}], "]"}], "]"}], "]"}]}], "]"}],
+      ";", "\[IndentingNewLine]", "\[IndentingNewLine]", 
+     RowBox[{"(*", " ", 
+      RowBox[{
+       RowBox[{"Handle", " ", "expressions", " ", "with", " ", "parameters"}],
+        ",", " ", 
+       RowBox[{"e", ".", "g", ".", " ", 
+        RowBox[{"compliesWithLaw", "[", "\"\<Jim\>\"", "]"}]}]}], " ", "*)"}],
+      "\[IndentingNewLine]", 
+     RowBox[{"ToString", "[", 
+      RowBox[{"Definition", "[", 
+       RowBox[{"Evaluate", "[", 
+        RowBox[{"StringTake", "[", 
+         RowBox[{"str", ",", 
+          RowBox[{"{", 
+           RowBox[{"1", ",", 
             RowBox[{
-             RowBox[{"StringPosition", "[", 
-              RowBox[{"str", ",", "\"\<[\>\""}], "]"}], "[", 
-             RowBox[{"[", 
-              RowBox[{"1", ",", "1"}], "]"}], "]"}], "-", "1"}]}], "}"}]}], 
-        "]"}], "]"}], "]"}], "]"}]}], "\[IndentingNewLine]", "]"}]}]], "Input",\
-
+             RowBox[{
+              RowBox[{"StringPosition", "[", 
+               RowBox[{"str", ",", "\"\<[\>\""}], "]"}], "[", 
+              RowBox[{"[", 
+               RowBox[{"1", ",", "1"}], "]"}], "]"}], "-", "1"}]}], "}"}]}], 
+         "]"}], "]"}], "]"}], "]"}]}]}], "\[IndentingNewLine]", 
+   "]"}]}]], "Input",
  InitializationCell->True,
  CellChangeTimes->{{3.684951016680759*^9, 3.6849510617091703`*^9}, {
   3.684951099546566*^9, 3.684951116166071*^9}, {3.684951504529739*^9, 
-  3.6849515085773993`*^9}}]
+  3.6849515085773993`*^9}, {3.7080843499349747`*^9, 3.708084417215377*^9}, {
+  3.708084495054937*^9, 3.708084685412706*^9}, {3.7080847656574097`*^9, 
+  3.70808480194701*^9}, {3.708084869487493*^9, 3.7080848860843267`*^9}}]
 }, Open  ]]
 }, Open  ]],
 
@@ -18567,7 +18594,7 @@ Cell[BoxData[{
 }, Open  ]]
 },
 WindowSize->{1117, 763},
-WindowMargins->{{Automatic, 73}, {1, Automatic}},
+WindowMargins->{{101, Automatic}, {-22, Automatic}},
 PrintingCopies->1,
 PrintingPageRange->{1, Automatic},
 FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
@@ -19594,18 +19621,18 @@ Cell[746231, 18416, 446, 10, 50, "Text"],
 Cell[746680, 18428, 3113, 68, 280, "Input",
  InitializationCell->True],
 Cell[749796, 18498, 363, 8, 50, "Text"],
-Cell[750162, 18508, 1010, 27, 91, "Input",
+Cell[750162, 18508, 2172, 54, 175, "Input",
  InitializationCell->True]
 }, Open  ]]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[751221, 18541, 164, 2, 44, "Subsection"],
-Cell[751388, 18545, 86, 1, 30, "Text"]
+Cell[752383, 18568, 164, 2, 44, "Subsection"],
+Cell[752550, 18572, 86, 1, 30, "Text"]
 }, Open  ]],
 Cell[CellGroupData[{
-Cell[751511, 18551, 195, 4, 44, "Subsection",
+Cell[752673, 18578, 195, 4, 44, "Subsection",
  CellID->295773824],
-Cell[751709, 18557, 235, 6, 54, "Input",
+Cell[752871, 18584, 235, 6, 54, "Input",
  CellID->1937775541]
 }, Open  ]]
 }, Open  ]]
